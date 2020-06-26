@@ -1,13 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Task INCRIFY</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <script type="text/javascript" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="header__nav nav">
+        <div class="nav__burger burger">
+          <button class="burger__button">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+          </button>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./#" class="nav__link">
+              Rooms
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="./#" class="nav__link">
+              Booking
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="./#" class="nav__link">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="/" class="header__link">
+        <img
+          src="./images/horizontal-logo.svg"
+          alt="NoWayOut"
+          class="header__logo"
+        >
+      </a>
+      <div class="header__block">
+        <div class="header__phone">
+          <a href="tel: +436606050000" class="header__link">
+            +43 660 605 0000
+          </a>
+        </div>
+        <div class="header__cart">
+          <a href="./#cart" class="header__link shopping-bag">
+            <span class="shopping-bag__qty">2</span>
+          </a>
+        </div>
+        <div class="header__lang lang">
+          <a href="./#de" class="lang__link lang__link--inactive">DE</a>
+          <a href="./#en" class="lang__link lang__link--active">EN</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="rooms">
+      <ul class="rooms__list">
+        <li class="rooms__item room">
+          <div class="room__container room__container--da-vinci">
+            <a href="./#" class="room__link">
+              <div class="room__descr">
+                <h2 class="room__header">Da Vinci</h2>
+                <p class="room__genre">Mystery</p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="rooms__item room">
+          <div class="room__container room__container--mission-belvedere">
+            <a href="./#" class="room__link">
+              <div class="room__descr">
+                <h2 class="room__header">Mission Belvedere</h2>
+                <p class="room__genre">Action</p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="rooms__item room">
+          <div class="room__discount discount">
+            <div class="discount__value">
+              200% OFF
+            </div>
+            <div class="discount__timing">
+              <div class="discount__title">
+                Limited-time Deal
+              </div>
+              <div class="discount__timer">
+                03:34:12
+              </div>
+            </div>
+          </div>
+          <div class="room__container room__container--school-of-magic room__container--discounted">
+            <a href="./#" class="room__link">
+              <div class="room__descr">
+                <h2 class="room__header">School of magic</h2>
+                <p class="room__genre">Adventure</p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="rooms__item room">
+          <div class="room__container room__container--the-unknown">
+            <a href="./#" class="room__link">
+              <div class="room__descr">
+                <h2 class="room__header">The Unknown</h2>
+                <p class="room__genre room__genre--actors">Horror with live actor</p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="rooms__item room">
+          <div class="room__container room__container--the-nun">
+            <a href="./#" class="room__link">
+              <div class="room__descr">
+                <h2 class="room__header">The Nun</h2>
+                <p class="room__genre room__genre--actors">Horror with live actor</p>
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="mobile-nav">
+    <div class="mobile-nav__block">
+      <div class="mobile-nav__burger burger">
+        <button class="burger__button burger__button--close">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </button>
+      </div>
+      <a href="/" class="mobile-nav__logo-link">
+        <img
+          src="./images/horizontal-logo.svg"
+          alt="NoWayOut"
+          class="header__logo"
+        >
+      </a>
+    </div>
+
+    <div class="mobile-nav__block mobile-nav__block--center">
+      <a href="tel: +436606050000" class="mobile-nav__link">
+        +43 660 605 0000
+      </a>
+    </div>
+
+    <div class="mobile-nav__block">
+      <div class="mobile-nav__lang lang">
+        <a href="./#de" class="lang__link lang__link--inactive">DE</a>
+        <a href="./#en" class="lang__link lang__link--active">EN</a>
+      </div>
+      <div class="mobile-nav__cart">
+        <a href="./#cart" class="header__link shopping-bag">
+          <span class="shopping-bag__qty">2</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-nav__block">
+      <nav class="mobile-nav__nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="./#" class="mobile-nav__link">
+              Rooms
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./#" class="mobile-nav__link">
+              Booking
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./#" class="mobile-nav__link">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</body>
+
 </html>

@@ -1,7 +1,48 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "nav";
+@import "burger";
+@import "shopping-bag";
+@import "rooms";
+@import "room";
+@import "lang";
+@import "discount";
+@import "mobile-nav";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
 
 body {
-  background: $c-gray;
+  font-family: "MADE Outer Sans", sans-serif;
+  background: $color-bg;
+  color: $color-main;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $offsetX;
+
+  @media screen and (max-width: $max-mobile-width) {
+    padding: 0 $offsetX-mobile;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }

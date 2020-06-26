@@ -1,0 +1,31 @@
+@import "utils";
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__burger {
+    display: none;
+
+    @media screen and (max-width: $max-tablet-width) {
+      display: flex;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @media screen and (max-width: $max-tablet-width) {
+      display: none;
+    }
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    @extend %nav-link;
+    @include hover-focus(color, $color-active);
+  }
+}

@@ -1,0 +1,42 @@
+@import "utils";
+
+.burger {
+  &__line {
+    width: 60px;
+    height: 2px;
+    background-color: $color-main;
+    transition: background-color 0.3s;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    &:hover .burger__line,
+    &:focus .burger__line {
+      background-color: $color-active;
+    }
+
+    &--close {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+
+      & div:first-child {
+        transform: rotate(45deg);
+        transform-origin: -8px 10px;
+      }
+
+      & div:last-child {
+        transform: rotate(-45deg);
+        transform-origin: 60px 20px;
+      }
+    }
+  }
+}

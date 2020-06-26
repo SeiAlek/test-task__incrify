@@ -1,6 +1,34 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: "MADE Outer Sans";
+  src: url("../fonts/MADE-Outer-Sans-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("../fonts/MADE-Outer-Sans-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("../fonts/MADE-Outer-Sans-Bold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("../fonts/MADE-Outer-Sans-Black.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Morganite";
+  src: url("../fonts/Morganite-Bold.ttf");
+  font-weight: 600;
   font-style: normal;
 }

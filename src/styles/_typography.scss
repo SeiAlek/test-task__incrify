@@ -1,3 +1,26 @@
-h1 {
-  @extend %h1;
+%h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+%discount-title {
+  font-weight: 250;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+%discount-value {
+  font-family: "Morganite", sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+
+%discount-timer {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
 }

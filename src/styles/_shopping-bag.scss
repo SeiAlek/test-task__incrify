@@ -1,0 +1,27 @@
+@import "utils";
+
+.shopping-bag {
+  position: relative;
+  background-image: url(/images/shopping-bag.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: $size-icon;
+  height: $size-icon;
+
+  &__qty {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2px;
+    background-image: url(/images/round.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: $size-icon;
+    height: $size-icon;
+    transform: translate(50%, -50%);
+    color: $color-active;
+  }
+}

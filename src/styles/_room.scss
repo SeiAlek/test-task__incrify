@@ -1,0 +1,135 @@
+@import "utils";
+
+.room {
+  position: relative;
+
+  &__discount {
+    position: absolute;
+    top: 4rem;
+    left: -6px;
+    right: -12px;
+    z-index: 1;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 800px;
+    overflow: hidden;
+    padding: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+
+    &--discounted {
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to bottom, $color-active, transparent);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: transform 1s;
+      transform-origin: center;
+      transform: scale(1.2);
+    }
+
+    &:hover::before,
+    &:focus::before {
+      transform: scale(1.01);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url(../images/blackout.svg);
+      background-position: bottom;
+      background-repeat: repeat-x;
+    }
+
+    &--da-vinci::before {
+      content: "";
+      background-image: url(../images/rooms/da-vinci.jpg);
+    }
+
+    &--mission-belvedere::before {
+      content: "";
+      background-image: url(../images/rooms/mission-belvedere.jpg);
+    }
+
+    &--school-of-magic::before {
+      content: "";
+      background-image: url(../images/rooms/school-of-magic.jpg);
+    }
+
+    &--the-unknown::before {
+      content: "";
+      background-image: url(../images/rooms/the-unknown.jpg);
+    }
+
+    &--the-nun::before {
+      content: "";
+      background-image: url(../images/rooms/the-nun.jpg);
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem 3rem;
+    color: $color-main;
+    text-decoration: none;
+    outline: none;
+    z-index: 1;
+    @include hover-focus(color, $color-active);
+  }
+
+  &__descr {
+    display: grid;
+    grid-template-rows: 4.5rem 1.5rem;
+    gap: 2rem;
+  }
+
+  &__header {
+    @extend %h2;
+  }
+
+  &__genre {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: 250;
+    font-size: 14px;
+    line-height: 24px;
+
+    &--actors::after {
+      content: "";
+      display: inline-block;
+      width: $size-icon;
+      height: $size-icon;
+      background-image: url(../images/masks.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: 1rem;
+    }
+  }
+}

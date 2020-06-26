@@ -1,0 +1,16 @@
+@import "utils";
+
+.lang {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    @extend %nav-link;
+    @include hover-focus(color, $color-active);
+    margin: 0 4px ;
+
+    &--inactive {
+      color: $color-inactive;
+    }
+  }
+}
