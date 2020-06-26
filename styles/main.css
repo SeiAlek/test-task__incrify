@@ -208,7 +208,7 @@
 
 .shopping-bag {
   position: relative;
-  background-image: url(/images/shopping-bag.svg);
+  background-image: url(../images/shopping-bag.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -226,7 +226,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding-right: 2px;
-    background-image: url(/images/round.svg);
+    background-image: url(../images/round.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
