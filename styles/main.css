@@ -213,7 +213,14 @@
   background-size: contain;
   background-repeat: no-repeat;
   width: 28px;
-  height: 28px; }
+  height: 28px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; }
+  .shopping-bag:hover, .shopping-bag:focus {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
   .shopping-bag__qty {
     position: absolute;
     display: -webkit-box;
